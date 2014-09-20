@@ -11,10 +11,7 @@ namespace JustGiving.Api.JustStats.Modules
     {
         public StatisticsModule()
         {
-            Get["/statistics/{name}"] = parameter =>
-            {
-                return parameter.name;
-            };
+            Get["/statistics/{name}"] = parameter => View["Index"];
         }
     }
 }
