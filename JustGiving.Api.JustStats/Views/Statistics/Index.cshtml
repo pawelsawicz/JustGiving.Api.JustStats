@@ -27,23 +27,19 @@
             <div class="col-md-6 col-md-offset-4">
                 <h1>JustStats</h1>
                 <h2>For : TestPage</h2>
-                <div id='outer' style="width: 1000px; height: 800px; margin: 0px auto; margin-top: 20px; padding: 10px">
-                    <div id="main" style="width: 1000px; height: 200px; margin: 0px auto;">
-                        <div id="radialDiv"></div>
-                    </div>
-                </div>
+                <div id="radialDiv"></div>
             </div>
         </div>
     </div>
     <script>
-        var graphicTools = function() {
+        var graphicTools = function () {
             var radialDiv = d3.select(document.getElementById('radialDiv'));
 
-            var start = function() {
+            var start = function () {
                 initRadialProgress();
             }
 
-            var initRadialProgress = function() {
+            var initRadialProgress = function () {
                 var rp1 = radialProgress(document.getElementById('radialDiv'))
                     .label("RADIAL 1")
                     .diameter(200)
