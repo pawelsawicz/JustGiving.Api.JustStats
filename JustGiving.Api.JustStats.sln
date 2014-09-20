@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Api.JustStats", "JustGiving.Api.JustStats\JustGiving.Api.JustStats.csproj", "{BBADB547-78A7-46A0-85C7-07A9A1291D18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Api.JustStats.DAL", "JustGiving.Api.JustStats.DAL\JustGiving.Api.JustStats.DAL.csproj", "{BB5841F2-CEFD-4F61-9F52-1E3BA9854BE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Api.JustStats.Domain", "JustGiving.Api.JustStats.Domain\JustGiving.Api.JustStats.Domain.csproj", "{EE7EFE77-395F-4A2E-9744-A3D95C030E63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{BBADB547-78A7-46A0-85C7-07A9A1291D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBADB547-78A7-46A0-85C7-07A9A1291D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBADB547-78A7-46A0-85C7-07A9A1291D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5841F2-CEFD-4F61-9F52-1E3BA9854BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5841F2-CEFD-4F61-9F52-1E3BA9854BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5841F2-CEFD-4F61-9F52-1E3BA9854BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5841F2-CEFD-4F61-9F52-1E3BA9854BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7EFE77-395F-4A2E-9744-A3D95C030E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7EFE77-395F-4A2E-9744-A3D95C030E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7EFE77-395F-4A2E-9744-A3D95C030E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7EFE77-395F-4A2E-9744-A3D95C030E63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
