@@ -38,6 +38,22 @@ namespace JustGiving.Api.JustStats.DAL
             }
             return result;
         }
+
+        public async Task<FundraisingPageDetails> GetFundraisingPageDetails()
+        {
+            var result = new FundraisingPageDetails();
+            var restRequest = new RestRequest("fundraising/pages/stephen-sutton-tct/");
+            var restResult = await _restClient.ExecuteGetTaskAsync<FundraisingPageDetails>(restRequest);
+            try
+            {
+                result = restResult.Data;
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }
+            return result;
+        }
     }
 
     [DataContract(Name = "donation", Namespace = "")]
@@ -55,5 +71,10 @@ namespace JustGiving.Api.JustStats.DAL
         //public int Id { get; set; }
         //public string ThirdPartyReference { get; set; }
         //public int CharityId { get; set; }
+    }
+
+    public class FundraisingPageDetails
+    {
+        public string TotalRaisedPercentageOfFundraisingTarget { get; set; }
     }
 }

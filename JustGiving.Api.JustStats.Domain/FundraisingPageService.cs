@@ -27,6 +27,19 @@ namespace JustGiving.Api.JustStats.Domain
             }).ToList();
             return result;
         }
+
+        public async Task<FundraisingPageStatictics> GetFundraisingPageStatictics()
+        {
+            var result = new FundraisingPageStatictics();
+            var sourceOfData = await _fundraisingPageRepository.GetFundraisingPageDetails();
+            result.TotalTotalRaisedPercentage = int.Parse(sourceOfData.TotalRaisedPercentageOfFundraisingTarget);
+            return result;
+        }
+    }
+
+    public class FundraisingPageStatictics
+    {
+        public int TotalTotalRaisedPercentage { get; set; }
     }
 
     public class CalendarViewModel

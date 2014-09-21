@@ -19,7 +19,8 @@ namespace JustGiving.Api.JustStats.Modules
 
             Get["/statistics/{name}", true] = async (x, ct) =>
             {
-                return await _fundraisingPageService.GetDonationsCountByDays();
+                var model = await _fundraisingPageService.GetFundraisingPageStatictics();
+                return model.TotalTotalRaisedPercentage;
             };
 
             Get["/statistics/{name}/calendar", true] = async (x, ct) =>
