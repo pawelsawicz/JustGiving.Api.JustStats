@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomConfigs\RazorConfig.cs" />
     <Compile Include="CustomNancyBootstrapper.cs" />
     <Compile Include="Modules\HomeModule.cs" />
     <Compile Include="Modules\StatisticsModule.cs" />
@@ -82,6 +83,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Scripts\jquery-1.9.0.min.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Statistics\Calendar.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Views\Statistics\Index.cshtml">
